@@ -7,9 +7,9 @@ type Location struct {
 }
 
 // NewPoint returns a GeoJSON Point with longitude and latitude.
-func NewPoint(lat, long float64) Location {
+func NewPoint(long, lat float64) Location {
 	return Location{
 		"Point",
-		[]float64{lat, long},
+		[]float64{long, lat},
 	}
 }
